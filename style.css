@@ -3,25 +3,25 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  margin: 0; /* Remove default margin for body */
-
   background: linear-gradient(rgb(0, 249, 236), rgb(71, 150, 229));
+  margin: 0; /* Remove default margin */
 }
 
 .container {
-  text-align: center; /* Center text content */
+  max-width: 600px; /* Set a maximum width for better readability on smaller screens */
+  width: 90%;
+  text-align: center;
 }
 
 #noButton,
 #yesButton {
-  position: static; /* Reset position */
-  margin: 10px 0; /* Add margin for better spacing on mobile */
-  transition: 0.5s;
+  width: 100%; /* Make the buttons full-width for mobile */
+  margin: 10px 0; /* Add spacing between buttons */
 }
 
 .header_text {
   font-family: "Nunito";
-  font-size: 30px; /* Adjust font size for mobile */
+  font-size: 30px; /* Adjust font size for smaller screens */
   font-weight: bold;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -30,26 +30,40 @@ body {
 
 .text {
   font-family: "Nunito";
-  font-size: 18px; /* Adjust font size for mobile */
+  font-size: 18px; /* Adjust font size for smaller screens */
   font-weight: bold;
   color: white;
   margin-top: 20px;
-  margin-bottom: 0px;
+  margin-bottom: 10px;
 }
 
 .buttons {
   display: flex;
-  flex-direction: column; /* Change direction for better stacking on mobile */
+  flex-direction: column; /* Change to column for better stacking on small screens */
   justify-content: center;
   align-items: center;
   margin-top: 20px;
-  margin-left: 20px;
 }
 
 .btn {
-  font-size: 14px; /* Adjust font size for mobile */
-  padding: 10px 20px; /* Adjust padding for better button size on mobile */
-  margin: 4px 0; /* Adjust margin for better spacing on mobile */
+  background-color: #017cff;
+  color: white;
+  font-weight: 600;
+  padding: 15px 0; /* Adjust padding for better spacing */
+  text-align: center;
+  font-size: 16px;
+  margin: 10px 0; /* Add spacing between buttons */
+  cursor: pointer;
+  border: none;
+  border-radius: 12px;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 3px 3px black;
+  width: 100%; /* Make the buttons full-width for mobile */
+}
+
+.btn:hover {
+  background-color: #ffffff;
+  color: #017cff;
 }
 
 .gif_container {
@@ -60,13 +74,12 @@ body {
 
 p {
   color: white;
-  text-align: center; /* Center text content */
-  font-size: 16px; /* Adjust font size for mobile */
+  font-size: 14px; /* Adjust font size for smaller screens */
 }
 
 p a {
   color: rgb(255, 255, 255);
-  font-size: 16px; /* Adjust font size for mobile */
+  font-size: 14px; /* Adjust font size for smaller screens */
   font-weight: 600;
   opacity: 0.25;
 }
